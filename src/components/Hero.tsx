@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import heroImage from "@/assets/hero-community.jpg";
+import heroImage from "@/assets/community-support.jpg";
 
 export const Hero = () => {
   return (
@@ -17,16 +17,7 @@ export const Hero = () => {
       {/* Content */}
       <div className="relative z-10 container mx-auto px-6 text-center text-white">
         <div className="max-w-4xl mx-auto space-y-8">
-          {/* Logo */}
-          <div className="flex justify-center mb-8">
-            <img 
-              src="/lovable-uploads/893ff7f9-6382-4ec2-bd5a-a12dc8a90fa9.png" 
-              alt="Each One Keep One Logo"
-              className="w-24 h-24 md:w-32 md:h-32"
-            />
-          </div>
-          
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight">
+          <h1 className="text-4xl md:text-6xl lg:text-7xl font-serif font-bold leading-tight">
             Each One
             <span className="block text-action">Keep One</span>
           </h1>

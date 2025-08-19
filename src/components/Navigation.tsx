@@ -35,13 +35,8 @@ export const Navigation = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex items-center gap-3">
-            <img 
-              src="/lovable-uploads/893ff7f9-6382-4ec2-bd5a-a12dc8a90fa9.png" 
-              alt="Each One Keep One Logo"
-              className="w-8 h-8"
-            />
             <span className={cn(
-              "font-bold text-lg transition-colors",
+              "font-serif font-bold text-xl transition-colors",
               isScrolled ? "text-foreground" : "text-white"
             )}>
               Each One Keep One
