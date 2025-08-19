@@ -2,41 +2,74 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+/* Each One Keep One Design System - Community-Focused Nonprofit Theme */
 
 @layer base {
   :root {
+    /* Core brand colors */
     --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --foreground: 215 25% 15%;
 
+    /* Card and surface colors */
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 215 25% 15%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 215 25% 15%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Primary - Trust and reliability (Deep Teal) */
+    --primary: 190 80% 35%;
+    --primary-foreground: 0 0% 98%;
+    --primary-hover: 190 80% 30%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Secondary - Warm support (Soft Blue) */
+    --secondary: 210 45% 96%;
+    --secondary-foreground: 215 25% 25%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    /* Action colors - Giving and hope (Warm Orange) */
+    --action: 25 95% 55%;
+    --action-foreground: 0 0% 98%;
+    --action-hover: 25 95% 50%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    /* Support colors */
+    --success: 145 65% 45%;
+    --success-foreground: 0 0% 98%;
+    
+    --warning: 45 100% 55%;
+    --warning-foreground: 215 25% 15%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --muted: 210 40% 97%;
+    --muted-foreground: 215 16% 47%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --accent: 190 20% 95%;
+    --accent-foreground: 215 25% 25%;
 
-    --radius: 0.5rem;
+    --destructive: 0 75% 55%;
+    --destructive-foreground: 0 0% 98%;
+
+    /* Form and interaction colors */
+    --border: 210 30% 90%;
+    --input: 210 30% 94%;
+    --ring: 190 80% 45%;
+
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(190 70% 45%));
+    --gradient-action: linear-gradient(135deg, hsl(var(--action)), hsl(35 90% 60%));
+    --gradient-hero: linear-gradient(135deg, hsl(190 80% 40%), hsl(210 60% 50%));
+
+    /* Shadows */
+    --shadow-soft: 0 4px 12px hsl(var(--primary) / 0.1);
+    --shadow-action: 0 8px 25px hsl(var(--action) / 0.25);
+    --shadow-card: 0 2px 8px hsl(215 25% 15% / 0.08);
+
+    /* Spacing and typography */
+    --radius: 0.75rem;
+    --radius-lg: 1rem;
+    --radius-xl: 1.5rem;
+
+    /* Animation */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-spring: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
 
     --sidebar-background: 0 0% 98%;
 
